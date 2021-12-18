@@ -7,7 +7,7 @@ const authRoutes = require('./routes/auth_routes')
 const port = process.env.PORT || 5000;
 app.use(express.json());
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://Sumit:2146255sb8@cluster0.0wij2.mongodb.net/googleSignin',
+mongoose.connect('mongodb+srv://<Username>:<Password>@cluster0.0wij2.mongodb.net/googleSignin',
  { useNewUrlParser: true });
 app.get('/',(req,res)=>{
     res.status(200).send({message:"API is working"});
